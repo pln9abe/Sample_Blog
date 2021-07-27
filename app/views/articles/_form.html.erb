@@ -1,0 +1,18 @@
+
+<%= form_for @article do |f| %>
+  <div class = "container-sm">
+
+      <%= f.label :title, class: "form-label" %><br>
+      <%= f.text_field :title, class: "form-control"%><br>
+
+      <%= f.label :author, class: "form-label"%><br>
+      <%= f.text_field :author, class: "form-control"%><br>
+
+      <%= f.label :body, class: "form-label"%><br>
+      <%= f.text_area :body, class: "form-control", rows: "10" %><br>
+
+    <%= link_to "Back",  root_path, class: "btn btn-secondary" %>
+    <%= f.submit class: "btn btn-primary" %>
+  </div>
+<% end %> 
+
